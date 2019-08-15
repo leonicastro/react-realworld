@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body, input, button {
+  font-family:  "Titillium Web", Montserrat, Verdana, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  max-width: 1140px;
+  justify-content: center;
+  margin: 0 auto;
+  flex: 1;
+  flex-direction: column;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: #000;
+  }
+}
