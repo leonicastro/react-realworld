@@ -8,7 +8,7 @@ section.container {
     flex-direction: column;
 
     h1 {
-      color: #FFF;
+      color: #fff;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
       font-weight: 700 !important;
       text-align: center;
@@ -25,9 +25,16 @@ section.container {
     }
   }
   section.main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     margin-top: 30px;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      & {
+        width: 90%;
+      }
+    }
 
     nav.feed-menu {
       button {
